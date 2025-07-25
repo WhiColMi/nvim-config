@@ -9,7 +9,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed ={ "lua_ls" }
+        ensure_installed ={ "lua_ls", "ts_ls", "biome" }
       })
     end
   },
@@ -18,6 +18,9 @@ return {
     config = function()
       local lspconfig = require("lspconfig")
       lspconfig.lua_ls.setup({})
+      lspconfig.ts_ls.setup({})
+      lspconfig.biome.setup({})
+      vim.lsp.set_log_level("debug")
 
       vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
       vim.keymap.set('n', 'gt', vim.lsp.buf.definition, {})
