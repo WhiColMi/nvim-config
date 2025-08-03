@@ -15,9 +15,9 @@ local colors = {
   orange = '#cb7723',
 
   border = '#15120e',
-  text_pripary = '#e9d8c3',
+  text_primary = '#e9d8c3',
   text_secondary = '#b8a89e',
-  shadow = '#000000',
+  shadow = '#000000aa',
 }
 
 -- Apply basic UI highlights
