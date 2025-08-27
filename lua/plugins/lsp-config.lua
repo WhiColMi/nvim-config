@@ -15,14 +15,12 @@ return {
   },
   {
     "neovim/nvim-lspconfig",
-    dependencies = {
-      "hrsh7th/cmp-nvim-lsp",
-    },
     config = function()
       local lspconfig = require("lspconfig")
       lspconfig.lua_ls.setup({})
       lspconfig.ts_ls.setup({})
       lspconfig.biome.setup({})
+      lspconfig.pyright.setup({})
       vim.lsp.set_log_level("debug")
 
       vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
