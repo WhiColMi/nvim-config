@@ -32,5 +32,5 @@ return {
       lspconfig.dartls.setup({ on_attach = on_attach, capabilities = capabilities })
       vim.lsp.set_log_level("debug")
     end
-  }
-
+  },
+}
