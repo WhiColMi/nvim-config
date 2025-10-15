@@ -14,6 +14,9 @@ return {
         sources = {
           formatting.stylua,
           formatting.biome,
+
+          --dart_formatter
+          formatting.dart_format,
         }
       })
       
