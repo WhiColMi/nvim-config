@@ -96,7 +96,8 @@ return {
     map("n", "<leader>db", function() dap.toggle_breakpoint() end, opts)
     map("n", "<leader>dB", function()
       dap.set_breakpoint(vim.fn.input("Breakpoint condition: "))
-    end, opts)
+    end, opts
+    )
     map("n", "<leader>dr", function() dap.repl.toggle() end, opts)
     map("n", "<leader>dl", function() dap.run_last() end, opts)
     map("n", "<leader>du", function() dapui.toggle() end, opts)
@@ -104,4 +105,4 @@ return {
     vim.fn.sign_define("DapBreakpoint", { text = "", texthl = "DiagnosticError" })
     vim.fn.sign_define("DapStopped", { text = "", texthl = "DiagnosticWarn" })
   end,
-},
+}
