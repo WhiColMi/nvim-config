@@ -12,6 +12,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("vim-keymaps")
 require("vim-options")
-require("theme-config")
 require("lazy").setup("plugins")
 require("autocmds")
+
+vim.cmd("colorscheme theme")
