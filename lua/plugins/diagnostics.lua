@@ -5,7 +5,9 @@ return {
     config = function()
       require("lspsaga").setup({
         ui = {
-          border = "rounded",
+          border = "double",
+          devicons = true,
+          winblend = 0,
           title = true,
           expand = "",
           collapse = "",

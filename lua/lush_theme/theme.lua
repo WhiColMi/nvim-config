@@ -37,6 +37,8 @@ local theme = lush(function(injected_functions)
     PmenuSel { fg = c.bg, bg = c.accent },
     Visual { bg = c.accent },
     WinSeparator { fg = c.shadow },
+    FloatBorder { fg = c.fg, bg = c.bg },
+    NormalFloat { fg = c.fg, bg = c.bg },
 
     -- Syntax
     Keyword { fg = c.purple },
@@ -102,16 +104,7 @@ local theme = lush(function(injected_functions)
     NeoTreeDimText { fg = c.text_secondary },
 
     -- LSPSaga
-    LspSagaHoverBorder { fg = c.accent, bg = c.bg },
-    LspSagaHover { fg = c.fg, bg = c.bg },
-    LspSagaCodeActionBorder { fg = c.accent, bg = c.bg },
-    LspSagaCodeActionTitle { fg = c.accent, bg = c.bg, gui = "bold" },
-    LspSagaCodeActionContent { fg = c.fg, bg = c.bg },
-    LspSagaRenameBorder { fg = c.accent, bg = c.bg },
-    LspSagaSignatureHelpBorder { fg = c.accent, bg = c.bg },
-    LspSagaFinderSelection { fg = c.bg, bg = c.accent },
-    LspSagaDefPreviewBorder { fg = c.accent, bg = c.bg },
-    LspSagaDefPreview { fg = c.fg, bg = c.bg },
+    SagaInCurrent { bg = c.bg_alt },
 
     -- Trouble
     TroubleBasename { fg = c.orange },
