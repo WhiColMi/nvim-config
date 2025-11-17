@@ -137,6 +137,31 @@ return {
       end
 
       -------------------------------------------------------------------
+      -- DART / FLUTTER
+      -------------------------------------------------------------------
+      dap.adapters.dart = {
+        type = "executable",
+        command = vim.fn.exepath("dart-debug-adapter"), -- ensure it's in PATH
+        args = { "flutter" },                           -- use "flutter" if debugging Flutter apps
+      }
+
+      dap.configurations.dart = {
+        {
+          type = "dart",
+          request = "launch",
+          name = "Debug Flutter app",
+          program = "lib/main.dart", -- entry point
+          cwd = "${workspaceFolder}",
+        },
+        {
+          type = "dart",
+          request = "attach",
+          name = "Attach to Flutter",
+          cwd = "${workspaceFolder}",
+        },
+      }
+
+      -------------------------------------------------------------------
       -- KEYMAPS
       -------------------------------------------------------------------
       local map = vim.keymap.set
