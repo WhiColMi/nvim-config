@@ -9,7 +9,15 @@ return {
     "williamboman/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = { "lua_ls", "ts_ls", "biome", "jedi_language_server" }
+        ensure_installed = {
+          "lua_ls",
+          "ts_ls",
+          "biome",
+          "jedi_language_server",
+
+          -- Depenedency for debugger
+          "js-debug-adapter",
+        }
       })
     end
   },
