@@ -24,7 +24,7 @@ return {
       capabilities.positionEncodings = { "utf-16" }
 
       local on_attach = function(_, bufnr)
-        local opts = { buffer = bufnr, silent = true, noremap = false }
+        -- local opts = { buffer = bufnr, silent = true, noremap = false }
 
         -- vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
         -- vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, opts)
