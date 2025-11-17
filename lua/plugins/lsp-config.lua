@@ -14,9 +14,6 @@ return {
           "ts_ls",
           "biome",
           "jedi_language_server",
-
-          -- Depenedency for debugger
-          "js-debug-adapter",
         }
       })
     end
@@ -59,7 +56,7 @@ return {
           settings = {},
         },
         biome = {
-          cmd = { "biome", "lsp" },
+          cmd = { "biome", "lsp-proxy" },
           filetypes = { "javascript", "typescript", "css", "json" },
           root_dir = root,
           settings = {},
