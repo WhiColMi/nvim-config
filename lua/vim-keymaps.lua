@@ -16,6 +16,6 @@ km.set('n', '<C-j>', ':TmuxNavigateDown<CR>', opts)
 km.set('n', '<C-k>', ':TmuxNavigateUp<CR>', opts)
 km.set('n', '<C-l>', ':TmuxNavigateRight<CR>', opts)
 
-km.set('n', '<leader>|', ':vsplit<CR>', opts)
-km.set('n', '<leader>-', ':split<CR>', opts)
+km.set('n', '<leader>|', ':vnew<CR>', opts)
+km.set('n', '<leader>-', ':new<CR>', opts)
 km.set('n', '<leader>x', ':close<CR>', opts)
